@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wichita HVAC Pros | Heating & Cooling Services</title>
+    <meta name="description" content="Reliable HVAC repair, installation, and maintenance in Wichita, KS. Request service today for expert heating and cooling solutions.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wichitahvacpros.com/">
+    <meta property="og:title" content="Wichita HVAC Pros | Heating & Cooling Services">
+    <meta property="og:description" content="Reliable HVAC repair, installation, and maintenance in Wichita, KS. Request service today.">
+    <meta property="og:image" content="https://wichitahvacpros.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wichitahvacpros.com/">
+    <meta property="twitter:title" content="Wichita HVAC Pros | Heating & Cooling Services">
+    <meta property="twitter:description" content="Reliable HVAC repair, installation, and maintenance in Wichita, KS. Request service today.">
+    <meta property="twitter:image" content="https://wichitahvacpros.com/twitter-image.jpg">
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Wichita HVAC Pros",
+        "image": "https://wichitahvacpros.com/logo.jpg",
+        "description": "Professional HVAC services in Wichita, KS including installation, repair, and maintenance.",
+        "url": "https://wichitahvacpros.com",
+        "telephone": "+1-316-677-7606",
+        "email": "info@wichitahvacpros.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wichita",
+            "addressRegion": "KS",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 37.6872,
+            "longitude": -97.3301
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday", 
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 37.6872,
+                "longitude": -97.3301
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <i class="fas fa-snowflake text-2xl text-[#fb3640] mr-2"></i>
+                    <h1 class="text-2xl font-bold text-[#191245]">Wichita HVAC Pros</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-[#191245] hover:text-[#fb3640] transition-colors">Home</a>
+                    <a href="#services" class="text-[#191245] hover:text-[#fb3640] transition-colors">Services</a>
+                    <a href="#about" class="text-[#191245] hover:text-[#fb3640] transition-colors">About</a>
+                    <a href="#contact" class="text-[#191245] hover:text-[#fb3640] transition-colors">Contact</a>
+                    <a href="tel:+1-316-677-7606" class="bg-[#fb3640] text-white px-6 py-2 rounded-lg hover:bg-[#e02e38] transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-[#191245]" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#home" class="text-[#191245] hover:text-[#fb3640] transition-colors">Home</a>
+                    <a href="#services" class="text-[#191245] hover:text-[#fb3640] transition-colors">Services</a>
+                    <a href="#about" class="text-[#191245] hover:text-[#fb3640] transition-colors">About</a>
+                    <a href="#contact" class="text-[#191245] hover:text-[#fb3640] transition-colors">Contact</a>
+                    <a href="tel:+1-316-677-7606" class="bg-[#fb3640] text-white px-6 py-2 rounded-lg hover:bg-[#e02e38] transition-colors text-center">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-[#191245] to-[#2a1b5a] text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    Wichita's Trusted <span class="text-[#fb3640]">HVAC Experts</span>
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                    Professional heating and cooling services you can count on. 
+                    Fast, reliable, and affordable solutions for your home.
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center items-center space-x-8 mb-12 text-gray-300">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-[#fb3640] mr-2"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-[#fb3640] mr-2"></i>
+                        <span>24/7 Emergency Service</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-[#fb3640] mr-2"></i>
+                        <span>5-Star Rated</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-[#be9b0c] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#a88a0a] transition-colors">
+                        <i class="fas fa-calculator mr-2"></i>Request Service
+                    </a>
+                    <a href="tel:+1-316-677-7606" class="bg-[#fb3640] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#e02e38] transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                        <div class="text-sm mt-1">(316) 677-7606</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#191245] mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive HVAC solutions to keep your home comfortable year-round
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Installation -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-[#fb3640] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191245] mb-4">Installation</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professional installation of new heating and cooling systems. 
+                        We handle everything from ductwork to smart thermostats.
+                    </p>
+                    <a href="#contact" class="text-[#fb3640] font-semibold hover:text-[#e02e38] transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Repair -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-[#fb3640] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191245] mb-4">Repair</h3>
+                    <p class="text-gray-600 mb-6">
+                        Fast, reliable repair services for all HVAC systems. 
+                        Emergency service available 24/7 when you need it most.
+                    </p>
+                    <a href="#contact" class="text-[#fb3640] font-semibold hover:text-[#e02e38] transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Maintenance -->
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-[#fb3640] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cog text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191245] mb-4">Maintenance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Regular maintenance to keep your system running efficiently. 
+                        Prevent costly breakdowns with our maintenance plans.
+                    </p>
+                    <a href="#contact" class="text-[#fb3640] font-semibold hover:text-[#e02e38] transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#191245] mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Don't just take our word for it - hear from satisfied customers in Wichita
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-[#fb3640]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Wichita HVAC Pros saved us during a heat wave! They came out same day and fixed our AC. 
+                        Professional, honest, and fair pricing. Highly recommend!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">S</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#191245]">Sarah M.</h4>
+                            <p class="text-sm text-gray-500">Wichita, KS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-[#fb3640]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "They installed our new furnace last winter and did an amazing job. 
+                        Clean work, on time, and they explained everything clearly. Great service!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#191245]">Mike R.</h4>
+                            <p class="text-sm text-gray-500">Wichita, KS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-[#fb3640]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Been using them for maintenance for 3 years now. Always reliable, 
+                        professional, and they catch issues before they become expensive problems."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#191245]">Jennifer L.</h4>
+                            <p class="text-sm text-gray-500">Wichita, KS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#191245] mb-4">Request Service</h2>
+                    <p class="text-xl text-gray-600">
+                        Get in touch for professional HVAC services in Wichita
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-[#191245] mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fb3640] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-[#191245] mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fb3640] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-[#191245] mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fb3640] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-[#191245] mb-2">Service Details</label>
+                                <textarea id="message" name="message" rows="4" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#fb3640] focus:border-transparent"
+                                          placeholder="Describe your HVAC needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-[#fb3640] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#e02e38] transition-colors">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Request
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#191245] mb-6">Get In Touch</h3>
+                            <p class="text-gray-600 mb-8">
+                                Ready to experience professional HVAC service? Contact us today for reliable 
+                                heating and cooling solutions in Wichita.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[#191245]">Phone</h4>
+                                    <a href="tel:+1-316-677-7606" class="text-gray-600 hover:text-[#fb3640] transition-colors">
+                                        (316) 677-7606
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[#191245]">Email</h4>
+                                    <a href="mailto:info@wichitahvacpros.com" class="text-gray-600 hover:text-[#fb3640] transition-colors">
+                                        info@wichitahvacpros.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-[#fb3640] rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-[#191245]">Hours</h4>
+                                    <p class="text-gray-600">Mon-Fri: 8AM-6PM<br>24/7 Emergency Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#191245] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-snowflake text-2xl text-[#fb3640] mr-2"></i>
+                        <h3 class="text-xl font-bold">Wichita HVAC Pros</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Professional HVAC services in Wichita, KS. Your comfort is our priority.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-[#fb3640] transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-[#fb3640] transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-[#fb3640] transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Installation</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Repair</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Maintenance</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Emergency Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[#fb3640] transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>(316) 677-7606</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@wichitahvacpros.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Wichita, KS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Wichita HVAC Pros. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('i');
+            
+            mobileMenu.classList.toggle('hidden');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.className = 'fas fa-bars text-xl';
+            } else {
+                icon.className = 'fas fa-times text-xl';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
