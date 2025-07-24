@@ -1,5 +1,5 @@
 {
-  "name": "tailgrids",
+  "name": "wichitahvacpros",
   "version": "2.3.0",
   "main": "index.js",
   "license": "MIT",
@@ -58,7 +58,6 @@
   "description": "Handcrafted Library of Tailwind CSS UI Components & Blocks for HTML, React and Vue.",
   "bugs": "https://github.com/TailGrids/tailwind-ui-components/issues",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch",
     "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css && node version-css.js"
   },
   "devDependencies": {
