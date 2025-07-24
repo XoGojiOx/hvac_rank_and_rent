@@ -2,15 +2,11 @@
   "name": "wichitahvacpros",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify",
-    "dev": "live-server dist"
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "autoprefixer": "^10.4.21",
-    "live-server": "^1.2.2",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14"
   }
 }
