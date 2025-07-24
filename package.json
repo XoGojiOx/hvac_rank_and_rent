@@ -2,7 +2,7 @@
   "name": "wichitahvacpros",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify",
     "dev": "live-server dist"
   },
   "devDependencies": {
