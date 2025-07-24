@@ -590,10 +590,6 @@ video {
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
 .sticky{
   position: sticky;
 }
@@ -645,10 +641,6 @@ video {
 
 .mr-4{
   margin-right: 1rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .mt-4{
@@ -808,9 +800,9 @@ video {
   background-color: rgb(25 18 69 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#be9b0c\]{
+.bg-\[\#40798c\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(190 155 12 / var(--tw-bg-opacity, 1));
+  background-color: rgb(64 121 140 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#fb3640\]{
@@ -995,9 +987,9 @@ video {
 
 /* Custom styles for our HVAC site */
 
-.hover\:bg-\[\#a88a0a\]:hover{
+.hover\:bg-\[\#366a7a\]:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(168 138 10 / var(--tw-bg-opacity, 1));
+  background-color: rgb(54 106 122 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#e02e38\]:hover{
