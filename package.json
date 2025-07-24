@@ -58,7 +58,8 @@
   "description": "Handcrafted Library of Tailwind CSS UI Components & Blocks for HTML, React and Vue.",
   "bugs": "https://github.com/TailGrids/tailwind-ui-components/issues",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css && node version-css.js"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.9",
