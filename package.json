@@ -2,9 +2,8 @@
   "name": "wichitahvacpros",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch",
-    "prepare": "chmod +x node_modules/.bin/tailwindcss"
+    "build": "postcss src/tailwind.css -o dist/output.css",
+    "watch": "postcss src/tailwind.css -o dist/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
