@@ -2,9 +2,9 @@
   "name": "wichitahvacpros",
   "version": "1.0.0",
   "scripts": {
-    "build": "postcss src/tailwind.css -o dist/output.css",
-    "watch": "postcss src/tailwind.css -o dist/output.css --watch"
-  },
+  "build": "postcss src/tailwind.css -o dist/output.css",
+  "watch": "postcss src/tailwind.css -o dist/output.css --watch"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
