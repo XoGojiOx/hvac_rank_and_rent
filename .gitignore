@@ -1,5 +1,0 @@
-node_modules
-.DS_Store
-dist/output.*.css
-!dist/output.css
-# Do NOT ignore robots.txt or sitemap.xml

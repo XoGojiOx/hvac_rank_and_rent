@@ -1,8 +1,0 @@
-# These must NOT be ignored
-!robots.txt
-!sitemap.xml
-
-# Do NOT ignore these either
-!index.html
-!blog.html
-!dist/** 
