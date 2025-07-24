@@ -2,12 +2,13 @@
   "name": "wichitahvacpros",
   "version": "1.0.0",
   "scripts": {
-    "build": "postcss src/tailwind.css -o dist/output.css",
-    "watch": "postcss src/tailwind.css -o dist/output.css --watch"
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --minify",
+    "dev": "live-server dist"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "autoprefixer": "^10.4.21",
+    "live-server": "^1.2.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.11"
