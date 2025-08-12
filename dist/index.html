@@ -71,6 +71,7 @@
 
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeR5YYrAAAAAMo86-LwpqbUky_ExGqHJ4kfFPB5"></script>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -316,7 +317,7 @@
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Contact Form -->
                     <div>
-                        <form class="space-y-6">
+                        <form id="leadForm" class="space-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-[#191245] mb-2">Full Name</label>
                                 <input type="text" id="name" name="name" required 
@@ -489,5 +490,57 @@
             });
         });
     </script>
+
+    <script>
+(function(){
+  const WEBHOOK_URL = "https://hook.us2.make.com/vkyi8lpxlqzmk1d2we281bytlx14jtg0";
+  const SITE_KEY = "6LeR5YYrAAAAAMo86-LwpqbUky_ExGqHJ4kfFPB5";
+  const form = document.querySelector('#leadForm');
+  if (!form) { console.warn('leadForm not found; no changes applied.'); return; }
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    const name = form.querySelector('[name="name"]')?.value?.trim() || "";
+    const email = form.querySelector('[name="email"]')?.value?.trim() || "";
+    const phone = form.querySelector('[name="phone"]')?.value?.trim() || "";
+    const message = form.querySelector('[name="message"]')?.value?.trim() || "";
+    const page = window.location.href;
+
+    try {
+      // Generate real reCAPTCHA token
+      let token = "fallback-token";
+      
+      if (typeof grecaptcha !== 'undefined') {
+        try {
+          // Wait for reCAPTCHA to be ready
+          await new Promise((resolve) => grecaptcha.ready(resolve));
+          token = await grecaptcha.execute("6LeR5YYrAAAAAMo86-LwpqbUky_ExGqHJ4kfFPB5", { action: 'submit' });
+          console.log('Real reCAPTCHA token generated');
+        } catch (recaptchaErr) {
+          console.log('reCAPTCHA failed, using fallback token:', recaptchaErr);
+        }
+      } else {
+        console.log('reCAPTCHA not available, using fallback token');
+      }
+
+      const res = await fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, message, page, token })
+      });
+
+      if (res.ok) {
+        window.location.href = 'thank-you.html';
+      } else {
+        alert('There was an issue sending your request. Please try again.');
+      }
+    } catch (err) {
+      console.error('Form submission error:', err);
+      alert('Network error. Please try again.');
+    }
+  });
+})();
+</script>
 </body>
 </html> 
